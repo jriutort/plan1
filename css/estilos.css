@@ -1,0 +1,110 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+
+
+nav>ul>li{
+    display: inline-block; 
+    /*width: 100%; */
+}
+
+nav{background-color: black;
+position: fixed;
+top: 0;
+    width: 100%;
+}
+
+nav>ul>li>a{
+    float: left;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;        
+}
+a:hover{
+    color: #7F8C8D;
+}
+
+#buscar{
+    display: inline-block;
+    float: right;
+    padding-right: 10px;
+}
+img{
+    width: 100%;
+    margin: 0 auto;
+}
+.foto1{
+    width: 13px;    
+}
+#estatua1{
+    border-radius: 15px;
+    filter: grayscale(100%);
+}
+.limpiar{
+    clear: both;
+    display: block;
+}
+header{
+    margin-top: 100px;
+}
+.titulo{
+    text-align: center;
+    box-shadow: orange 10px 10px 5px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.parte1{
+    width: 69%;
+    float: left;
+    margin-top: 15px;
+    text-align: justify;
+    margin-right: 5px;   
+}
+.parte2{
+    width: 29%;
+    float: right;
+    margin-top: 35px;
+    margin-right: 2px;    
+}
+#fondopublicidad{
+    background: orange;
+}
+.parrafo2{
+    background-image: radial-gradient(circle  at 35%, rgba(0, 128, 0, 0.59), rgba(255, 0, 0, 0.6));  
+}
+#relato1,#relato2,.parte3{
+    margin-top: 20px;
+}
+
+.foto2{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    opacity: .5;
+    width: 10%; 
+    
+}
+#estatua2{
+   border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 1s;
+    
+}
+#estatua2:hover{
+    transform: scale(1.4);
+    transition: 1s;
+}
+
+@media only screen and (max-width:600px)
+{
+    .parte1,.parte2{
+        width: 100%;
+    }
+    #buscar,.foto1,.foto2{
+        display: none;
+    }    
+    
+}
+
+
